@@ -58,6 +58,14 @@ const UserNav = props => {
       },
     },
     {
+      text: <FormattedMessage id="UserNav.ManageListingsPage" />,
+      selected: selectedPageName === 'ManageListingsPage',
+      disabled: false,
+      linkProps: {
+        name: 'ManageListingsPage',
+      },
+    },
+    {
       text: <FormattedMessage id="UserNav.contactDetailsPage" />,
       selected: ACCOUNT_SETTINGS_PAGES.includes(selectedPageName),
       disabled: false,
